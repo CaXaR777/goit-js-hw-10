@@ -22,6 +22,8 @@ function onSearch(e) {
         Notify.info(
           'Too many matches found. Please enter a more specific name.'
         );
+        countryList.innerHTML = '';
+        countryInfo.innerHTML = '';
       }
       if (result.length <= 10) {
         countryList.innerHTML = countryListMarkup(result);
